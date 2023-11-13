@@ -1,0 +1,60 @@
+.section-container {
+    border: 1px solid black;
+    /* position: relative; */
+    margin: 10px;
+    padding: 10px;
+}
+
+.aside-container {
+    border: 1px solid black;
+    float: right;
+    /* position: absolute; */
+    width: 30%;
+    margin: 0px 10px 10px 10px;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+.fishes, .quotes, .locations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.fish, .quote, .location {
+    flex-basis: 250px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.fishes {
+    align-items: flex-end;
+}
+
+.quotes {
+    align-items: center;
+}
+
+.locations {
+    align-items: flex-end;
+}
+
+.quote {
+    background-color: lightcyan;
+}
+
+.tip {
+    padding: 10px;
+}
+
+
+.section__header {
+    width: 100%;
+    text-align: center;
+}
+
+
+.page__header {
+    text-align: center;
+}
