@@ -63,11 +63,11 @@ export const getFish = () => {
 }
 
 export const getTips = () => {
-    return database.tips.map(tips => ({...tips}))
+    return database.tips.map(tip => ({...tip}))
 }
 
 export const getLocations = () => {
-    return database.locations.map(locations => ({...locations}))
+    return database.locations.map(location => ({...location}))
 }
 
 export const mostHolyFish = () => {
@@ -93,7 +93,7 @@ export const soldierFish = () => {
 export const nonHolyFish = () => {
     const regularFish = []
     for (const fish of database.fish) {
-        if (fish.length % 3 != 0 && fish.length % 5 != 0) {
+        if (fish.length % 3 !== 0 && fish.length % 5 !== 0) {
             regularFish.push(fish)
         }
     }
